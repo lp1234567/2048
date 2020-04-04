@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -36,13 +36,15 @@
       1.修复了两个以上的方块一起运动会重叠的bug；<br />&nbsp;&nbsp;&nbsp;&nbsp;
       2.修复了部分情况下某个方块不能移动的bug；<br />&nbsp;&nbsp;&nbsp;&nbsp;
       3.删除了重置功能；<br />&nbsp;&nbsp;&nbsp;&nbsp;
-      这将是有史以来最完美的一个版本；（兼容性太差）
+      
     </div>
   </body>
   <script src="./js/jquery-1.12.2.js"></script>
   <script src="./js/tools.js"></script>
   <script src="./js/index.js"></script>
   <script>
-    alert('请在谷歌上玩')
+    if(!/chrome|Chrome/.test(window.navigator.userAgent)) {
+      alert('请用谷歌浏览器')
+    }
   </script>
 </html>
